@@ -1,0 +1,10 @@
+swagger: "2.0"
+info:
+  description: "The Pi-hole FTL engine API"
+  version: "1.0.0"
+  title: "FTL API"
+basePath: "/"
+schemes:
+- "https"
+- "http"
+paths:

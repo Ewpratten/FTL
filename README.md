@@ -16,7 +16,7 @@ FTLDNS[™](https://pi-hole.net/trademark-rules-and-brand-guidelines/) (`pihole-
 
 # Official documentation
 
-The official *FTL*DNS documentation can be found [here](https://docs.pi-hole.net/ftldns/).
+The official *FTL*DNS documentation can be found [here](https://docs.pi-hole.net/ftldns/), along with HTTP API documentation [here](https://pi-hole.github.io/FTL/swagger).
 
 # Installation
 

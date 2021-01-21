@@ -4,7 +4,46 @@ info:
   version: "1.0.0"
   title: "FTL API"
 basePath: "/"
+host: "pi.hole"
 schemes:
-- "https"
 - "http"
 paths:
+  /api/dns/blocking:
+    get:
+      summary: "Get DNS blocking information"
+      tags:
+        - DNS
+      responses:
+        200:
+          description: "Current DNS blocking information"
+          schema:
+            type: object
+            properties: 
+              blocking:
+                type: boolean
+              timer:
+                type: object
+                properties: 
+                  delay:
+                    type: integer
+                  blocking_target:
+                    type: boolean
+    post:
+      summary: "Set DNS blocking information"
+      tags:
+       - DNS
+      responses:
+        400:
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                example: null
+              error:
+                type: object
+                properties:
+                  key:
+                    type: string
+                  message:
+                    type: string
